@@ -233,7 +233,7 @@ struct LicenseActivationView: View {
             .padding(.top, 10)
 
             VStack(spacing: 10) {
-                Link(destination: URL(string: "https://t.me/roboios")!) {
+                Link(destination: URL(string: "https://t.me/+i4YfhNVt6WRmM2M1")!) {
                     HStack(spacing: 10) {
                         Text("ROBO x LEE OFFICIAL")
                             .font(.system(size: 14, weight: .semibold))
