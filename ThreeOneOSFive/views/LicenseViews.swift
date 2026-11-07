@@ -122,6 +122,7 @@ private struct AppLaunchLoadingView: View {
 struct LicenseActivationView: View {
     @EnvironmentObject private var session: LicenseSessionController
     @State private var licenseKey = ""
+    private let leeContactUsername = "@LEE_777EXE"
 
     var body: some View {
         ZStack {
@@ -165,8 +166,8 @@ struct LicenseActivationView: View {
     }
 
     private var form: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Text("Lee 777 is an official partner of Robo and is collab with us.")
+        VStack(alignment: .center, spacing: 14) {
+            Text("Lee 777 is official partner of Robo")
                 .font(.system(size: 13, weight: .medium))
                 .foregroundStyle(Color.white)
                 .padding(.bottom, 2)
@@ -233,9 +234,9 @@ struct LicenseActivationView: View {
             .padding(.top, 10)
 
             VStack(spacing: 10) {
-                Link(destination: URL(string: "https://t.me/+i4YfhNVt6WRmM2M1")!) {
+                Link(destination: URL(string: "https://t.me/LEE_777EXE")!) {
                     HStack(spacing: 10) {
-                        Text("ROBO x LEE OFFICIAL")
+                        Text("LEE 777 CONTACT")
                             .font(.system(size: 14, weight: .semibold))
                         Image(systemName: "paperplane.fill")
                             .font(.system(size: 15, weight: .semibold))
@@ -247,7 +248,7 @@ struct LicenseActivationView: View {
                     
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel("ROBO x LEE OFFICIAL on Telegram")
+                .accessibilityLabel("LEE 777 CONTACT on Telegram")
             }
             .padding(.top, 18)
 
