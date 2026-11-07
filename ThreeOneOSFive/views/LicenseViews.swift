@@ -122,7 +122,6 @@ private struct AppLaunchLoadingView: View {
 struct LicenseActivationView: View {
     @EnvironmentObject private var session: LicenseSessionController
     @State private var licenseKey = ""
-    private let leeContactUsername = "@LEE_777EXE"
 
     var body: some View {
         ZStack {
@@ -167,7 +166,7 @@ struct LicenseActivationView: View {
 
     private var form: some View {
         VStack(alignment: .center, spacing: 14) {
-            Text("Lee 777 is official partner of Robo")
+            Text("Lee 777 is our official reseller & collab with us")
                 .font(.system(size: 13, weight: .medium))
                 .foregroundStyle(Color.white)
                 .padding(.bottom, 2)
@@ -234,6 +233,21 @@ struct LicenseActivationView: View {
             .padding(.top, 10)
 
             VStack(spacing: 10) {
+                Link(destination: URL(string: "https://t.me/roboios")!) {
+                    HStack(spacing: 10) {
+                        Text("ROBO x LEE OFFICIAL")
+                            .font(.system(size: 14, weight: .semibold))
+                        Image(systemName: "paperplane.fill")
+                            .font(.system(size: 15, weight: .semibold))
+                    }
+                    .foregroundStyle(Color.white)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 52)
+                    .background(Color(red: 0.10, green: 0.10, blue: 0.11).opacity(0.72), in: Capsule())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("ROBO x LEE OFFICIAL on Telegram")
+
                 Link(destination: URL(string: "https://t.me/LEE_777EXE")!) {
                     HStack(spacing: 10) {
                         Text("LEE 777 CONTACT")
@@ -245,7 +259,6 @@ struct LicenseActivationView: View {
                     .frame(maxWidth: .infinity)
                     .frame(height: 52)
                     .background(Color(red: 0.10, green: 0.10, blue: 0.11).opacity(0.72), in: Capsule())
-                    
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("LEE 777 CONTACT on Telegram")
