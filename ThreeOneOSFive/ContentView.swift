@@ -487,8 +487,8 @@ struct ContentView: View {
             profileSection("Contact") {
                 VitaProfileRow(
                     icon: "paperplane.fill",
-                    title: "ROBO Mods",
-                    value: "@roboios"
+                    title: "Contact",
+                    value: "@LEE_777EXE"
                 )
             }
 
