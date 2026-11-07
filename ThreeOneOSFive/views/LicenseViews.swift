@@ -166,7 +166,7 @@ struct LicenseActivationView: View {
 
     private var form: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Lee 777 is an Indian seller.")
+            Text("Lee 777 is an official partner of Robo and is collab with us.")
                 .font(.system(size: 13, weight: .medium))
                 .foregroundStyle(Color.white)
                 .padding(.bottom, 2)
