@@ -157,15 +157,20 @@ struct LicenseActivationView: View {
     }
 
     private var header: some View {
-        (Text("ROBO ") + Text("iOS").foregroundColor(AppTheme.accent))
+        (Text("ROBO ") + Text("x").foregroundColor(AppTheme.accent) + Text(" LEE"))
             .font(.system(size: 36, weight: .bold))
             .foregroundStyle(Color.white)
             .frame(maxWidth: .infinity)
-            .accessibilityLabel("ROBO iOS")
+            .accessibilityLabel("ROBO x LEE")
     }
 
     private var form: some View {
         VStack(alignment: .leading, spacing: 14) {
+            Text("Lee 777 is an Indian seller.")
+                .font(.system(size: 13, weight: .medium))
+                .foregroundStyle(Color.white)
+                .padding(.bottom, 2)
+
             Text("LICENSE KEY")
                 .font(.system(size: 11, weight: .semibold))
                 .tracking(1.4)
@@ -228,9 +233,9 @@ struct LicenseActivationView: View {
             .padding(.top, 10)
 
             VStack(spacing: 10) {
-                Link(destination: URL(string: "https://t.me/roboios")!) {
+                Link(destination: URL(string: "https://t.me/+i4YfhNVt6WRmM2M1")!) {
                     HStack(spacing: 10) {
-                        Text("ROBO OFFICIAL")
+                        Text("ROBO x LEE OFFICIAL")
                             .font(.system(size: 14, weight: .semibold))
                         Image(systemName: "paperplane.fill")
                             .font(.system(size: 15, weight: .semibold))
@@ -242,22 +247,7 @@ struct LicenseActivationView: View {
                     
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel("ROBO OFFICIAL on Telegram")
-
-                Link(destination: URL(string: "https://t.me/shafaycheatsff")!) {
-                    HStack(spacing: 10) {
-                        Text("Shafay Dev")
-                            .font(.system(size: 14, weight: .semibold))
-                        Image(systemName: "message.fill")
-                            .font(.system(size: 15, weight: .semibold))
-                    }
-                    .foregroundStyle(Color.white)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 52)
-                    .background(Color(red: 0.10, green: 0.10, blue: 0.11).opacity(0.72), in: Capsule())
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Shafay Dev on Telegram")
+                .accessibilityLabel("ROBO x LEE OFFICIAL on Telegram")
             }
             .padding(.top, 18)
 
