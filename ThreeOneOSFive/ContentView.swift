@@ -76,7 +76,7 @@ struct ContentView: View {
         .tint(AppTheme.accent)
         .preferredColorScheme(.dark)
         .alert(
-            "ROBO iOS",
+            "ROBO x LEE",
             isPresented: Binding(
                 get: { controller.message != nil },
                 set: { if !$0 { controller.message = nil } }
@@ -426,7 +426,7 @@ struct ContentView: View {
             HStack(spacing: 14) {
                 AppLogo(size: 52)
                 VStack(alignment: .leading, spacing: 3) {
-                    Text("ROBO iOS")
+                    Text("ROBO x LEE")
                         .font(.system(size: 22, weight: .bold))
                         .foregroundStyle(Color.white)
                     Text("Play Beyond Limits")
@@ -475,7 +475,7 @@ struct ContentView: View {
                 VitaProfileRow(
                     icon: "info.circle.fill",
                     title: "Name",
-                    value: "ROBO iOS"
+                    value: "ROBO x LEE"
                 )
                 VitaProfileRow(
                     icon: "square.stack.3d.up.fill",
@@ -489,11 +489,6 @@ struct ContentView: View {
                     icon: "paperplane.fill",
                     title: "ROBO Mods",
                     value: "@roboios"
-                )
-                VitaProfileRow(
-                    icon: "person.fill",
-                    title: "Shafay Dev",
-                    value: "@shafaycheatsff"
                 )
             }
 
@@ -539,7 +534,7 @@ struct ContentView: View {
             HStack(spacing: 14) {
                 AppLogo(size: 52)
                 VStack(alignment: .leading, spacing: 3) {
-                    Text("ROBO iOS")
+                    Text("ROBO x LEE")
                         .font(.system(size: 22, weight: .bold))
                         .foregroundStyle(Color.white)
                     Text("PLAY BEYOND LIMITS")
